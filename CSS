@@ -1,0 +1,53 @@
+html {
+  font-family: sans-serif;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+  background-color: #85acd8;
+  border: 1px solid black;
+}
+
+.feature-article {
+  grid-area: feature-article;
+  background-color: #85acd8;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+  background-color: #85acd8;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+  background-color: #85acd8;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+img {
+  object-fit: contain;
+  max-height: 300px;
+  border: 1px solid black;
+}
+
+.magazine-cover {
+  display: grid;
+  grid-template-areas: 
+    'title title title'
+    'feature-article feature-article cover-image'
+    'small-article1 small-article2 cover-image';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 10px;
+  width: 90%;
+}
